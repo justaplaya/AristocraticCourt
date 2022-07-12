@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.restaurantContainer {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    display: grid;
+    grid-template: auto auto auto auto / 1fr;
+    gap: 0px;
+    width: 320px;
+    
+    //border: solid 2.5px whitesmoke;
+border-radius: 10px;
+    position: relative;
+
+}
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.vipZoneWrapper{
+    padding: 5px;
+}
+.vipZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    padding: 5px;
+    border: dashed 2.5px rgb(34,34,34);
+    border-radius: 10px;
+    background-color: rgb(50,255,150);
+}
+.vipFirstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255,50,0);
+    color: whitesmoke;
+    transition: all .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    /*&:hover{
+        background-color: rgb(0,127.5,255);
+
+    }
+    &.active{
+        background-color: rgb(0,127.5,255);
+    }*/
+    &.occupied{
+        background-color: rgb(127.5,25,0);
+        color: whitesmoke;
+        pointer-events: none;
+    }
+    &.picked{
+        background-color: rgb(255,200,50);
+        color: rgb(34,34,34);
+    }
+}
+.seat:hover{
+}
+.vipSecondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.table {
+    width: 40px;
+    height: 40px;
+    background-color: #cecece;
+}
+.vipThirdRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.wc {
+    height: 100%;
+    width: 100%;
+    background-color: #cecece;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.wc::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+
+    width: 2.5px;
+    height: 45px;
+    background-color: black;
+    transform: rotate(315deg);
+}
+.corridor {
+   width: 100%;
+   height: 40px;
+   position: relative;
+   overflow: hidden;
+}
+.corridor::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 2.5px;
+    height: 45px;
+    background-color: whitesmoke;
+    transform: rotate(45deg);
+}
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+position: relative;
+}
+.centerZoneWrapper{
+    padding: 5px;
+}
+.centerZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+    border: dashed 2.5px whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(12.5,63.75,37.5);
+
+}
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.tableFirstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.tableSecondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.tableThirdRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.barZoneWrapper{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.barZone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+    padding: 5px;
+    border: dashed 2.5px whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(25,127.5,75);
+}
+.barFirstColumnSeats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.barSecondColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    height: 100%;
+    position: relative;
+}
+.barItself {
+    width: 100%;
+    height: 100%;
+    background-color: #cecece;
+}
+.barEmptySpace{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 0 0 auto auto;
+    background-color: rgb(25,127.5,75);
+}
+.barSecondColumnSeats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.sceneZone {
+    padding: 5px;
+    
+}
+.scene {
+    padding: 5px;
+    color:whitesmoke;
+    border: solid 2.5px whitesmoke;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-weight: bold;
+}
+.vipPrice{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(50,255,150);
+}
+.barPrice{   
+    width: 30px;
+    height: 30px;
+    background-color: rgb(25,127.5,75);
+
+}
+.centerPrice{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(12.5,63.75,37.5);
+
+}

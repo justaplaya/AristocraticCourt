@@ -1,0 +1,53 @@
+.section5{
+    height: 100vh;
+    background-color: rgb(245, 73, 153);
+    text-align: center;
+    
+}
+.generalContainer{
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 10px;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all .3s linear;
+    opacity: 1;
+    z-index: 4;
+    &.off{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+}
+.restItem{
+    background-color: tomato;
+    padding: 5px 10px;
+    margin: 5px auto;
+    border-radius: 25px;
+    p{
+        pointer-events: none;
+    }
+}

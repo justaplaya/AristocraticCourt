@@ -1,0 +1,41 @@
+{
+    "Чай":{
+        "name":"Чай",
+        "custom":{
+        "Сорт":["Зелёный", "Чёрный", "Каркаде"],
+        "Добавка":["Мята", "Лимон", "Чабрец"],
+        "descriptions":[
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?"
+        ]
+        },
+        "photo":"https://raw.githubusercontent.com/justaplaya/AristocraticCourt/main/src/images/11.webp",
+        "cost":1
+    },
+    "Кофе":{
+        "name":"Кофе",
+        "custom":{
+        "Сорт":["Арабика", "Робуста", "Либерика"],
+        "Добавка":["Сливки", "Корица", "Лимон"],
+        "descriptions":[
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?"
+        ]
+        },
+        "photo":"https://raw.githubusercontent.com/justaplaya/AristocraticCourt/main/src/images/12.webp",
+        "cost":2
+    },
+    "Травы":{
+        "name":"Травы",
+        "custom":{
+        "Вид":["Зверобой", "Ромашка", "Душица"],
+        "Температура":["Холодная", "Горячая", "Комнатная"],
+        "descriptions":[
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?"
+        ]
+        },
+        "photo":"https://raw.githubusercontent.com/justaplaya/AristocraticCourt/main/src/images/13.webp",
+        "cost":3
+    }
+}
