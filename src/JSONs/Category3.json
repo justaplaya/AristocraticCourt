@@ -1,0 +1,41 @@
+{
+    "Шарлотка":{
+        "name":"Шарлотка",
+        "custom":{
+        "Начинка":["Яблоко", "Апельсин", "Лайм + мята"],
+        "Сироп":["Шоколад", "Кленовый", "Без"],
+        "descriptions":[
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?",
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?"
+            ]
+        },
+        "photo":"https://raw.githubusercontent.com/justaplaya/AristocraticCourt/main/src/images/31.webp",
+        "cost":7
+    },
+    "Медовик":{
+        "name":"Медовик",
+        "custom":{
+        "Крошка":["Шоколадная", "Цитрусовая", "Песочная"],
+        "Крем":["Взбитые сливки", "Медовый", "Шоколадный"],
+        "descriptions":[
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?",
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?"
+            ]
+        },
+        "photo":"https://raw.githubusercontent.com/justaplaya/AristocraticCourt/main/src/images/32.webp",
+        "cost":8
+    },
+    "Какао":{
+        "name":"Какао",
+        "custom":{
+        "Закуска":["Солёный крекер", "Жареный миндаль", "Вяленые яблоки"],
+        "Сироп":["Взбитые сливки", "Кленовый", "Без"],
+        "descriptions":[
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?",
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, quo debitis voluptatem nesciunt maxime omnis veniam quis inventore fuga perspiciatis dolores aliquam earum quia, vero dicta porro labore nulla nemo? Obcaecati dignissimos molestias, aliquid doloremque rerum soluta dolores eum illo similique quisquam debitis enim dolorem vel error. Distinctio, dolore deleniti?"
+            ]
+        },
+        "photo":"https://raw.githubusercontent.com/justaplaya/AristocraticCourt/main/src/images/33.webp",
+        "cost":9
+    }
+}

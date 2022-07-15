@@ -1,0 +1,571 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.restaurantContainer {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    display: grid;
+    grid-template: auto auto auto auto / 1fr;
+    gap: 0px;
+    //width: 270px;
+    //width: 100%;
+    
+    //border: solid 2.5px whitesmoke;
+border-radius: 10px;
+    position: relative;
+
+}
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.vipZoneWrapper{
+    padding: 5px;
+}
+.vipZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    padding: 5px;
+    border: dashed 2.5px rgb(34,34,34);
+    border-radius: 10px;
+    background-color: rgb(50,255,150);
+}
+.vipFirstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.seat {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255,50,0);
+    color: whitesmoke;
+    transition: all .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12.5px;
+    /*&:hover{
+        background-color: rgb(0,127.5,255);
+
+    }
+    &.active{
+        background-color: rgb(0,127.5,255);
+    }*/
+    &.occupied{
+        background-color: rgb(127.5,25,0);
+        color: whitesmoke;
+        pointer-events: none;
+    }
+    &.picked{
+        background-color: rgb(255,200,50);
+        color: rgb(34,34,34);
+    }
+}
+.vipSecondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.table {
+    width: 20px;
+    height: 20px;
+    background-color: #cecece;
+}
+.vipThirdRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.wc {
+    height: 100%;
+    width: 100%;
+    background-color: #cecece;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 17.5px;
+}
+.wc::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+
+    width: 2.5px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(315deg);
+}
+.corridor {
+   width: 100%;
+   height: 20px;
+   position: relative;
+   overflow: hidden;
+}
+.corridor::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 2.5px;
+    height: 20px;
+    background-color: whitesmoke;
+    transform: rotate(45deg);
+}
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+position: relative;
+}
+.centerZoneWrapper{
+    padding: 5px;
+}
+.centerZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+    border: dashed 2.5px whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(12.5,63.75,37.5);
+
+}
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.tableFirstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.tableSecondRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.tableThirdRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.barZoneWrapper{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.barZone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+    padding: 5px;
+    border: dashed 2.5px whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(25,127.5,75);
+}
+.barFirstColumnSeats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.barSecondColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    height: 100%;
+    position: relative;
+}
+.barItself {
+    width: 100%;
+    height: 100%;
+    background-color: #cecece;
+}
+.barEmptySpace{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: -1px -1px auto auto;
+    background-color: rgb(25,127.5,75);
+}
+.barSecondColumnSeats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.sceneZone {
+    padding: 5px;
+    
+}
+.scene {
+    padding: 2.5px;
+    color:whitesmoke;
+    border: solid 2.5px whitesmoke;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12.5px;
+}
+.vipPrice{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(50,255,150);
+}
+.barPrice{   
+    width: 20px;
+    height: 20px;
+    background-color: rgb(25,127.5,75);
+
+}
+.centerPrice{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(12.5,63.75,37.5);
+
+}
+@media screen and (min-width: 360px){
+    .seat {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+    }    
+    .table {
+        width: 30px;
+        height: 30px;
+    }    
+    .barEmptySpace{
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+    }    
+    .corridor::after{
+        width: 2.5px;
+    }  
+    .wc{
+        font-size: 17px;
+    }  
+    .wc::after{
+        width: 2.5px;
+    }
+    .vipZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed 2.5px rgb(34,34,34);
+        border-radius: 10px;
+    }
+    .barZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed 2.5px rgb(34,34,34);
+        border-radius: 10px;
+    }
+    .centerZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed 2.5px rgb(34,34,34);
+        border-radius: 10px;
+    }
+    .scene {
+        font-size: 17.5spx;
+        padding: 5px;
+        border: solid 2.5px whitesmoke;
+        border-radius: 10px;
+    }    
+}
+
+@media screen and (min-width: 560px){
+    .seat {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }    
+    .table {
+        width: 50px;
+        height: 50px;
+    }    
+    .barEmptySpace{
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+    }    
+    .corridor::after{
+        width: 3.5px;
+    }  
+    .wc{
+        font-size: 25px;
+    }  
+    .wc::after{
+        width: 3.5px;
+    }
+    .vipZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 3.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .barZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 3.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .centerZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 3.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .scene {
+        font-size: 25px;
+        padding: 10px;
+        border: solid 3.5px whitesmoke;
+        border-radius: 15px;
+    }    
+}
+
+@media screen and (min-width: 768px){
+    .seat {
+        width: 55px;
+        height: 55px;
+        font-size: 27.5px;
+    }    
+    .table {
+        width: 55px;
+        height: 55px;
+    }    
+    .barEmptySpace{
+        width: calc(100% - 55px);
+        height: calc(100% - 55px);
+    }    
+    .corridor::after{
+        width: 5px;
+    }  
+    .wc{
+        font-size: 35px;
+    }  
+    .wc::after{
+        width: 5px;
+    }
+    .vipZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .barZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .centerZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .scene {
+        font-size: 35px;
+        padding: 10px;
+        border: solid 5px whitesmoke;
+        border-radius: 15px;
+    }    
+}
+
+@media screen and (min-width: 1024px){
+    .seat {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }    
+    .table {
+        width: 40px;
+        height: 40px;
+    }    
+    .barEmptySpace{
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+    }    
+    .corridor::after{
+        width: 2.5px;
+    }  
+    .wc{
+        font-size: 35px;
+    }  
+    .wc::after{
+        width: 2.5px;
+    }
+    .vipZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed  2.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .barZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed  2.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .centerZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed 2.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .scene {
+        font-size: 25px;
+        padding: 5px;
+        border: solid  2.5px whitesmoke;
+        border-radius: 15px;
+    }    
+}
+
+@media screen and (min-width: 1366px){
+    .seat {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }    
+    .table {
+        width: 40px;
+        height: 40px;
+    }    
+    .barEmptySpace{
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+    }    
+    .corridor::after{
+        width: 2.5px;
+    }  
+    .wc{
+        font-size: 35px;
+    }  
+    .wc::after{
+        width: 2.5px;
+    }
+    .vipZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed  2.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .barZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed  2.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .centerZone {
+        gap: 5px;
+        padding: 5px;
+        border: dashed 2.5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .scene {
+        font-size: 25px;
+        padding: 5px;
+        border: solid  2.5px whitesmoke;
+        border-radius: 15px;
+    }    
+}
+
+@media screen and (min-width: 1920px){
+    .seat {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+    }    
+    .table {
+        width: 55px;
+        height: 55px;
+    }    
+    .barEmptySpace{
+        width: calc(100% - 55px);
+        height: calc(100% - 55px);
+    }    
+    .corridor::after{
+        width: 5px;
+    }  
+    .wc{
+        font-size: 50px;
+    }  
+    .wc::after{
+        width: 5px;
+    }
+    .vipZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed  5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .barZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed  5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .centerZone {
+        gap: 10px;
+        padding: 10px;
+        border: dashed 5px rgb(34,34,34);
+        border-radius: 15px;
+    }
+    .scene {
+        font-size: 35px;
+        padding: 15px;
+        border: solid  5px whitesmoke;
+        border-radius: 20px;
+    }    
+    /*.restaurantContainer {
+        width:59
+    }*/
+}
+
